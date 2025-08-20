@@ -1,0 +1,26 @@
+# Core Deep Learning Library
+torch
+torchvision
+torchaudio
+
+# Data manipulation and utilities
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Machine learning helpers
+scikit-learn
+
+# Time series forecasting (ATM cash prediction task)
+etna
+
+# NLP tasks
+transformers
+datasets
+
+# Jupyter Notebook support
+notebook
+jupyterlab
