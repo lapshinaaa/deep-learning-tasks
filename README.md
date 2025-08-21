@@ -15,7 +15,7 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 ├── DL3_time_series.ipynb  
 ├── DL4_text_classification.ipynb  
 ├── requirements.txt  
-├── LICENSE
+├── LICENSE <br />
 └── README.md  
 
 ---
