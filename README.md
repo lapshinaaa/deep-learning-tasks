@@ -3,7 +3,7 @@
 Welcome to my Deep Learning Tasks repository! 🚀  
 This repo contains a collection of completed deep learning exercises and experiments, implemented in Jupyter Notebooks (.ipynb). Each notebook explores a different aspect of deep learning — from fundamentals to advanced architectures.  
 
-All tasks were completed as part of the *Deep Learning course (minor: Intellectual Data Analysis)* at HSE.  
+All tasks were completed as part of the *Deep Learning course (minor: Intellectual Data Analysis)* as well as *Deep Learning-2 course* at HSE.  
 Each notebook is self-contained; imports are provided inline, and main libraries are also listed in `requirements.txt`.  
 
 ---
