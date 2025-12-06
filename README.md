@@ -12,8 +12,8 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 
 ├── DL1_introductory_tasks.ipynb  
 ├── DL2_image_classification.ipynb  
-├── DL3_time_series.ipynb  
-├── DL4_text_classification.ipynb  
+├── DL3_text_classification.ipynb  
+├── DL4_transformers_NER.ipynb  
 ├── requirements.txt  
 ├── LICENSE <br />
 └── README.md  
