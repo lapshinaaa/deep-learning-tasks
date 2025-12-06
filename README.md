@@ -26,8 +26,7 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 |----------|-------|--------------|-------|
 | `DL1_introductory_tasks.ipynb` | 🔰 Introduction to Deep Learning | PyTorch basics, tensors, autograd | Introductory exercises to get familiar with PyTorch and essential DL libraries. |
 | `DL2_image_classification.ipynb` | 🌱 Plant Species Classification | CNNs, custom architectures, optimization | Built and trained CNNs in PyTorch for image classification, experimented with model customization and training strategies. |
-| `DL3_time_series.ipynb` | 📈 Time Series Forecasting | ETNA library, forecasting models, evaluation | Real-world case study: forecasting cash demand for ATMs. Used multi-segment daily data and ETNA toolkit to improve prediction quality — a critical task for financial institutions. |
-| `DL4_text_classification.ipynb` | 📰 News & Comment Classification | NLP, text classification, Hugging Face models | Trained models to classify news articles, predicted categories for unseen items, applied sentiment analysis with Hugging Face, and built analytics on most positive/negative news/comment categories. |
+| `DL3_text_classification.ipynb` | 📰 News & Comment Classification | NLP, text classification, Hugging Face models | Trained models to classify news articles, predicted categories for unseen items, applied sentiment analysis with Hugging Face, and built analytics on most positive/negative news/comment categories. |
 
 ---
 
