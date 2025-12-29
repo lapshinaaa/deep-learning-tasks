@@ -14,6 +14,7 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 ├── DL2_image_classification.ipynb  
 ├── DL3_text_classification.ipynb  
 ├── DL4_transformers_NER.ipynb  
+├── DL5_image_segmentation.ipynb  
 ├── requirements.txt  
 ├── LICENSE <br />
 └── README.md  
@@ -28,6 +29,7 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 | `DL2_image_classification.ipynb` | 🌱 Plant Species Classification | CNNs, custom architectures, optimization | Built and trained CNNs in PyTorch for image classification, experimented with model customization and training strategies. |
 | `DL3_text_classification.ipynb` | 📰 News & Comment Classification | NLP, text classification, Hugging Face models | Trained models to classify news articles, predicted categories for unseen items, applied sentiment analysis with Hugging Face, and built analytics on most positive/negative news/comment categories. |
 | `DL4_transformers_NER.ipynb` | 🏷️ Named Entity Recognition (NER) with Transformers & LLMs | Tokenizer-independent NER, BIO tagging, HuggingFace token classification, DataCollator, span alignment, LLM-assisted annotation, Optuna tuning | Built a full NER pipeline from scratch: reconstructed BIO labels into tokenizer-independent spans, aligned character-level entities to BPE tokens, and tokenized datasets for model training. Used Qwen-2.5 7B-Instruct to generate synthetic annotations, implemented strict validation, retry logic, and span post-processing, and merged valid LLM-generated samples into the training set. Fine-tuned BAAI/bge-small-en-v1.5 with HuggingFace Trainer, evaluated token-classification metrics, and achieved strong results even with limited synthetic annotation. |
+| `DL5_image_segmentation.ipynb` | 🧠 Image Segmentation (U-Net, LinkNet) | Encoder–decoder architectures, skip connections, VGG backbones, loss engineering, deep supervision, post-processing, experiment tracking | Implemented U-Net and LinkNet from scratch with a VGG13 encoder. Explored architectural refinements (residual decoder blocks, batch normalization), advanced optimization strategies (BCE + Dice loss scheduling, deep supervision), and Albumentations-based data augmentation. Logged training with TensorBoard, performed systematic ablations, and improved validation IoU from baseline U-Net to 0.92+ with post-processing via morphological operations. |
 
 ---
 
