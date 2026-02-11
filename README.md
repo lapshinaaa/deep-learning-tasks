@@ -14,7 +14,9 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 ├── DL2_image_classification.ipynb  
 ├── DL3_text_classification.ipynb  
 ├── DL4_transformers_NER.ipynb  
-├── DL5_image_segmentation.ipynb  
+├── DL5_image_segmentation.ipynb  <br />
+├── DL6_diffusion_models.ipynb <br />
+├── DL7_NN_CanGen.ipynb <br />
 ├── requirements.txt  
 ├── LICENSE <br />
 └── README.md  
@@ -30,6 +32,10 @@ Each notebook is self-contained; imports are provided inline, and main libraries
 | `DL3_text_classification.ipynb` | 📰 News & Comment Classification | NLP, text classification, Hugging Face models | Trained models to classify news articles, predicted categories for unseen items, applied sentiment analysis with Hugging Face, and built analytics on most positive/negative news/comment categories. |
 | `DL4_transformers_NER.ipynb` | 🏷️ Named Entity Recognition (NER) with Transformers & LLMs | Tokenizer-independent NER, BIO tagging, HuggingFace token classification, DataCollator, span alignment, LLM-assisted annotation, Optuna tuning | Built a full NER pipeline from scratch: reconstructed BIO labels into tokenizer-independent spans, aligned character-level entities to BPE tokens, and tokenized datasets for model training. Used Qwen-2.5 7B-Instruct to generate synthetic annotations, implemented strict validation, retry logic, and span post-processing, and merged valid LLM-generated samples into the training set. Fine-tuned BAAI/bge-small-en-v1.5 with HuggingFace Trainer, evaluated token-classification metrics, and achieved strong results even with limited synthetic annotation. |
 | `DL5_image_segmentation.ipynb` | 🧠 Image Segmentation (U-Net, LinkNet) | Encoder–decoder architectures, skip connections, VGG backbones, loss engineering, deep supervision, post-processing, experiment tracking | Implemented U-Net and LinkNet from scratch with a VGG13 encoder. Explored architectural refinements (residual decoder blocks, batch normalization), advanced optimization strategies (BCE + Dice loss scheduling, deep supervision), and Albumentations-based data augmentation. Logged training with TensorBoard, performed systematic ablations, and improved validation IoU from baseline U-Net to 0.92+ with post-processing via morphological operations. |
+| `DL6_diffusion_models.ipynb` | 🌫️ Diffusion Models | Forward–reverse stochastic processes, noise schedules, score matching, denoising diffusion, conditional generation, variance scheduling, training stability, visualization of trajectories | Implemented and analyzed DDPM-style diffusion from first principles. Visualized forward noising trajectories (Swiss Roll and MNIST), compared linear/quad/sigmoid noise schedules via $\sqrt{\bar{\alpha}_t}$, and studied their impact on information decay. Built training loop with adaptive LR annealing, TensorBoard logging, and batch normalization statistics refresh. Extended the model from grayscale MNIST to RGB Colored-MNIST, debugging UNet channel/normalization mismatches and adapting the backbone for 3-channel inputs. Trained conditional diffusion with class embeddings and evaluated sample quality across schedules. |
+| `DL7_NN_CanGen.ipynb` | 🎧 Neural Candidate Generation (SASRec) | Sequential recommendation, causal Transformers, in-batch negative sampling, LogQ debiasing, ranking metrics, temporal splitting, dataset engineering | Built an end-to-end neural candidate generation pipeline on Yandex Yambda. Performed time-based train/val/test splits, item remapping to dense IDs, and autoregressive sequence dataset construction with sliding prefixes. Implemented SASRec backbone with causal masking, padding-aware attention, and variable-length handling. Added two training objectives: random negatives and in-batch negatives with LogQ correction for popularity bias. Implemented HitRate@k and DCG@k evaluation, batched collation utilities, and efficient masking. Demonstrated how loss choice affects ranking quality and catalog coverage. |
+
+
 
 ---
 
